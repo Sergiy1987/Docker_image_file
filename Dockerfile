@@ -1,5 +1,5 @@
 # Pull base image
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 LABEL maintainer="Sergiy Slobodyanyk <nedved198725@gmail.com>"
 USER root
