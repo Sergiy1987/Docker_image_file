@@ -1,5 +1,5 @@
 # Pull base image
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 
 LABEL maintainer="Sergiy Slobodyanyk <nedved198725@gmail.com>"
 USER root
@@ -10,10 +10,12 @@ apt-get update -y
 #apt-get -y upgrade
 
 # Install main packages
-RUN apt-get install -y openjdk-8-jdk \
+RUN 
+apt-get install -y \
+#openjdk-8-jdk \
 #openjdk-8-jre \
-maven \
-git \
+#maven \
+#git \
 xvfb \ 
 wget \
 libappindicator1 \
