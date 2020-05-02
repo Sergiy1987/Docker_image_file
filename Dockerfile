@@ -21,7 +21,10 @@ wget \
 libappindicator1 \
 fonts-liberation \
 libxss1 \
-xdg-utils
+xdg-utils \
+libasound2 \
+libnspr4 \
+libnss3
  
 # Install Google Chrome v. 79.0.3945.88
 RUN \
