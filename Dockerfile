@@ -20,7 +20,7 @@ fonts-liberation
  
 # Install Google Chrome v. 79.0.3945.88
 RUN \
-wget https://www.slimjet.com/chrome/download-chrome.php?file=files/79.0.3945.88/google-chrome-stable_current_amd64.deb -O chrome-stable_current_amd64.deb && \
+wget https://www.slimjet.com/chrome/download-chrome.php?file=files/79.0.3945.88/google-chrome-stable_current_amd64.deb -O chrome-stable_current_amd64.deb \
 dpkg -i chrome-stable_current_amd64.deb
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
