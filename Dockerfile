@@ -15,6 +15,7 @@ openjdk-8-jre \
 maven \
 git \
 xvfb \ 
+wget \
 libappindicator1 \
 fonts-liberation
  
