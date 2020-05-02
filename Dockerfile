@@ -1,5 +1,5 @@
 # Pull base image
-FROM ubuntu:18.04
+FROM ubuntu:16.04
 
 LABEL maintainer="Sergiy Slobodyanyk <nedved198725@gmail.com>"
 USER root
@@ -11,7 +11,7 @@ apt-get update -y
 
 # Install main packages
 RUN apt-get install -y openjdk-8-jdk \
-openjdk-8-jre \
+#openjdk-8-jre \
 maven \
 git \
 xvfb \ 
