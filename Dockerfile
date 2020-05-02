@@ -10,7 +10,7 @@ apt-get update -y
 #apt-get -y upgrade
 
 # Install main packages
-RUN 
+RUN \
 apt-get install -y \
 #openjdk-8-jdk \
 #openjdk-8-jre \
