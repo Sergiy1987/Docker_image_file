@@ -17,12 +17,15 @@ git \
 xvfb \ 
 wget \
 libappindicator1 \
-fonts-liberation
+fonts-liberation \
+libxss1 \
+xdg-utils
  
 # Install Google Chrome v. 79.0.3945.88
 RUN \
 wget https://www.slimjet.com/chrome/download-chrome.php?file=files/79.0.3945.88/google-chrome-stable_current_amd64.deb -O chrome_stable_current_amd64.deb && \
 ls -a && \
+apt-get install chrome_stable_current_amd64.deb && \
 dpkg -i chrome_stable_current_amd64.deb && \
 apt --fix-broken install && \
 rm chrome_stable_current_amd64.deb
